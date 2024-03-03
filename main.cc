@@ -52,7 +52,7 @@ int main () {
     /*std::cout << "Rentrez ci-dessous le nom du fichier dans lequel vous voulez écrire le résultat\n";
     std::string email_not_reserve_file;
     std::cin >> email_not_reserve_file;*/
-    file.open("./liste_email_sans_reservation.txt", std::ios::out);
+    file.open("./liste_email_sans_reservation.csv", std::ios::out);
     if (!file.is_open())
         throw std::runtime_error("Je n'ai pas trouvé de fichier avec le nom : liste_email_sans_reservation.txt\n");
     for (const auto &email : email_not_reserve) {
